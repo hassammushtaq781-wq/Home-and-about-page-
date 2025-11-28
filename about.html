@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - NexusTech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#F59E0B',
+                        dark: '#1F2937',
+                        light: '#F3F4F6'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .team-card:hover .team-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">N</span>
+                    </div>
+                    <span class="text-2xl font-bold text-dark">NexusTech</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-dark hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-primary font-semibold">About</a>
+                    <a href="services.html" class="text-dark hover:text-primary transition-colors duration-300">Services</a>
+                    <a href="contact.html" class="text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-all duration-300">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">About NexusTech</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+                We are a team of passionate innovators dedicated to transforming businesses through cutting-edge technology solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold text-dark mb-6">Our Story</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Founded in 2015, NexusTech began as a small startup with a big vision: to make advanced technology accessible to businesses of all sizes. What started as a team of three passionate developers has grown into a family of 50+ experts.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Over the years, we've helped more than 500 clients transform their digital presence, from local startups to Fortune 500 companies. Our commitment to excellence and innovation has earned us numerous awards and, more importantly, the trust of our clients.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">8+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent mb-2">500+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-secondary mb-2">50+</div>
+                            <div class="text-gray-600">Team Members</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-500 mb-2">15+</div>
+                            <div class="text-gray-600">Awards Won</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-gradient-to-br from-primary to-purple-600 rounded-2xl p-8">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Our Team" 
+                             class="rounded-xl shadow-2xl w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To empower businesses with innovative technology solutions that drive growth, efficiency, and success in the digital age. We believe in creating lasting partnerships and delivering exceptional value to every client.
+                    </p>
+                </div>
+                
+                <!-- Vision -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To be the leading technology partner for businesses worldwide, recognized for our innovation, reliability, and commitment to transforming ideas into digital realities that shape the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Our Values</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    The principles that guide everything we do
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Innovation</h3>
+                    <p class="text-gray-600">
+                        We constantly push boundaries and explore new technologies to deliver cutting-edge solutions that give our clients a competitive edge.
+                    </p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Integrity</h3>
+                    <p class="text-gray-600">
+                        We believe in transparency, honesty, and building trust through every interaction. Our clients' success is our success.
+                    </p>
+                </div>
+                
+                <!-- Value 3 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Collaboration</h3>
+                    <p class="text-gray-600">
+                        We work as partners with our clients, listening to their needs and collaborating closely to achieve their business objectives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Meet Our Team</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    The brilliant minds behind our success
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg team-card card-hover">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="John Smith" 
+                             class="w-full h-64 object-cover team-image transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">John Smith</h3>
+                        <p class="text-primary font-semibold mb-3">CEO & Founder</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Visionary leader with 15+ years of experience in technology and business strategy.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg team-card card-hover">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Sarah Johnson" 
+                             class="w-full h-64 object-cover team-image transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Sarah Johnson</h3>
+                        <p class="text-primary font-semibold mb-3">CTO</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Technology expert specializing in cloud architecture and scalable solutions.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg team-card card-hover">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Mike Chen" 
+                             class="w-full h-64 object-cover team-image transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Mike Chen</h3>
+                        <p class="text-primary font-semibold mb-3">Lead Developer</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Full-stack developer passionate about creating elegant, efficient code.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg team-card card-hover">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Emily Davis" 
+                             class="w-full h-64 object-cover team-image transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Emily Davis</h3>
+                        <p class="text-primary font-semibold mb-3">Design Director</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Creative designer focused on user experience and beautiful interfaces.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Work With Us?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Join hundreds of satisfied clients who have transformed their business with our technology solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-accent text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all duration-300">
+                    Start Your Project
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-dark transition-all duration-300">
+                    Contact Our Team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">N</span>
+                        </div>
+                        <span class="text-xl font-bold">NexusTech</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">Digital solutions for modern businesses</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Sitemap</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 NexusTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Animate elements on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.card-hover');
+            
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
